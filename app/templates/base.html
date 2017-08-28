@@ -9,7 +9,9 @@
   <body>
     <div>Microblog:
         <a href="/index">Home</a>
+        <!-- | <a>Logout</a> -->
         {% if g.user.is_authenticated %}
+        | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
         | <a href="{{ url_for('logout') }}">Logout</a>
         {% endif %}
     </div>
