@@ -359,3 +359,11 @@ Traceback (most recent call last):
     Form.__init__(self, *args, **kwargs)
 NameError: name 'Form' is not defined
 2017-08-29 20:23:58,297 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 20:45:10,215 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 20:55:44,091 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:05:12,110 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:20:27,179 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:20:42,622 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:21:01,895 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:23:10,457 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-29 21:43:23,029 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
