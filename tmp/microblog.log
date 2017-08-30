@@ -1228,3 +1228,29 @@ TypeError: Unicode-objects must be encoded before hashing
 2017-08-30 20:48:12,091 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-08-30 20:55:37,909 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-08-30 20:59:13,969 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:21:01,575 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:23:26,192 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:37:12,540 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:37:26,834 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:37:58,274 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:38:07,796 ERROR: Exception on /search_results/dwad [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 215, in search_results
+    results = Post.query.whoosh_search(query, MAX_SEARCH_RESULTS).all()
+AttributeError: 'BaseQuery' object has no attribute 'whoosh_search'
+2017-08-30 21:39:32,609 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 21:40:00,472 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]

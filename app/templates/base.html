@@ -12,6 +12,9 @@
         <!-- | <a>Logout</a> -->
         {% if g.user.is_authenticated %}
         | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
+        <!-- for search -->
+        | <form style="display: inline;" action="{{url_for('search')}}" method="post" name="search">{{g.search_form.hidden_tag()}}{{g.search_form.search(size=20)}}<input type="submit" value="Search"></form>
+        <!-- for search -->
         | <a href="{{ url_for('logout') }}">Logout</a>
         {% endif %}
     </div>

@@ -188,3 +188,32 @@ def internal_error(error):
 def internal_error(error):
     db.session.rollback()
     return render_template('500.html'), 500
+
+#for search
+from .forms import SearchForm
+
+@app.before_request
+def before_request():
+    g.user = current_user
+    if g.user.is_authenticated():
+        g.user.last_seen = datetime.utcnow()
+        db.session.add(g.user)
+        db.session.commit()
+        g.search_form = SearchForm()
+@app.route('/search', methods = ['POST'])
+@login_required
+def search():
+    if not g.search_form.validate_on_submit():
+        return redirect(url_for('index'))
+    return redirect(url_for('search_results', query = g.search_form.search.data))
+
+from config import MAX_SEARCH_RESULTS
+
+@app.route('/search_results/<query>')
+@login_required
+def search_results(query):
+    results = Post.query.whoosh_search(query, MAX_SEARCH_RESULTS).all()
+    return render_template('search_results.html',
+        query = query,
+        results = results)
+#for search
