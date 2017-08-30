@@ -1,25 +1,43 @@
-<!-- <html>
-  <head>
-    {% if title %}
-    <title>{{title}} - microblog</title>
-    {% else %}
-    <title>Welcome to Rookieblog</title>
-    {% endif %}
-  </head>
-  <body>
-      <h1>Hello, {{user.nickname}}!</h1>
-      {% for post in posts %}
-      <p>{{post.author.nickname}} says: <b>{{post.body}}</b></p>
-      {% endfor %}
-  </body>
-</html>
- -->
-{% extends 'base.html' %}
-{% block content %}
+<!-- extend base layout -->
+{% extends "base.html" %}
 
-<h1>Hi, {{user.nickname}}!</h1>
-{% for post in posts %}
-<div><p>{{post.author.nickname}} says: <b>{{post.body}}</b></p></div>
+{% block content %}
+<h1>Hi, {{g.user.nickname}}!</h1>
+<form action="" method="post" name="post">
+    {{form.hidden_tag()}}
+    <table>
+        <tr>
+            <td>Say something:</td>
+            <td>{{ form.post(size = 30, maxlength = 140) }}</td>
+            <td>
+            {% for error in form.errors.post %}
+                <span style="color: red;">[{{error}}]</span><br>
+            {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Post!"></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+<!-- posts is a Paginate object -->
+{% for post in posts.items %}
+<p>
+  {% include 'post.html' %}
+</p>
 {% endfor %}
 
+{% if posts.has_prev %}
+    <a href="{{ url_for('index', page = posts.prev_num) }}"><< Newer posts</a>
+{% else %}
+    << Latest posts
+{% endif %} |
+
+{% if posts.has_next %}
+    <a href="{{ url_for('index', page = posts.next_num) }}">Older posts >></a>
+{% else %}
+    Oldest posts >>
+{% endif %}
 {% endblock %}

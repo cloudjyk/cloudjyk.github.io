@@ -24,3 +24,6 @@ MAIL_USERNAME = None
 MAIL_PASSWORD = None
 # administrator list
 ADMINS = ['you@example.com']
+
+# pagination分页
+POSTS_PER_PAGE = 3

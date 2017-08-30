@@ -367,3 +367,864 @@ NameError: name 'Form' is not defined
 2017-08-29 21:21:01,895 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-08-29 21:23:10,457 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-08-29 21:43:23,029 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:36:10,021 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:39:21,122 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:41:13,108 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:58:20,707 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:58:21,782 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 18:58:27,427 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:07:43,625 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:15:54,307 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:15:58,293 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 19, in template
+    {% e<!-- xtends 'base.html' %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'e'.
+2017-08-30 19:16:00,646 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 19, in template
+    {% e<!-- xtends 'base.html' %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'e'.
+2017-08-30 19:16:18,538 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 19, in template
+    {% e<!-- xtends 'base.html' %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'e'.
+2017-08-30 19:16:23,742 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 19, in template
+    {% e<!-- xtends 'base.html' %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'e'.
+2017-08-30 19:17:24,033 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:17:27,188 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:17:31,396 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 27, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:23:11,996 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:23:15,086 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 36, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:24:47,102 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:24:50,366 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 39, in index
+    posts=posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:24:59,092 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 39, in index
+    posts=posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:31:17,978 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 39, in index
+    posts=posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 32, in template
+    {% block content %}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 82, in generate
+    generator.visit(node)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 691, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\compiler.py", line 309, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2017-08-30 19:32:52,334 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 19:50:46,660 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:03:26,996 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:03:29,932 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 36, in index
+    posts = g.user.posts().all()
+TypeError: 'AppenderBaseQuery' object is not callable
+2017-08-30 20:05:29,037 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:05:32,141 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(g.user.id == user.id).all()
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:06:07,213 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:06:11,140 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(user.id == g.user.id ).all()
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:06:22,172 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(user.id == g.user.id )
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:07:12,352 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:07:13,715 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(user_id == g.user.id )
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:07:40,218 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:07:42,187 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(author == g.user)
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:08:18,727 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(author == g.user.id)
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:08:24,162 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:08:27,274 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 37, in index
+    posts = Post.filter(author == g.user.id)
+AttributeError: type object 'Post' has no attribute 'filter'
+2017-08-30 20:08:38,303 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:10:59,366 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:12:00,030 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:14:47,801 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:24:01,358 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:25:01,396 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:25:54,298 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:27:29,991 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:31:27,464 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:36:45,701 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:38:32,288 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:47:06,849 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:47:15,013 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 46, in index
+    posts=posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "F:\PYweb\for_MY_flask\app\templates\base.html", line 28, in top-level template code
+    {% block content %}
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 28, in block "content"
+    {% include 'post.html' %}
+  File "F:\PYweb\for_MY_flask\app\templates\post.html", line 3, in top-level template code
+    <td><img src="{{post.author.avatar(50)}}"></td><td><i>{{post.author.nickname}} says:</i><br>{{post.body}}</td>
+  File "F:\PYweb\for_MY_flask\app\models.py", line 49, in avatar
+    return 'http://www.gravatar.com/avatar/' + md5(self.email).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: Unicode-objects must be encoded before hashing
+2017-08-30 20:47:18,223 ERROR: Exception on /user/cloud3 [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 124, in user
+    posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "F:\PYweb\for_MY_flask\app\templates\base.html", line 28, in top-level template code
+    {% block content %}
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 7, in block "content"
+    <td><img src="{{user.avatar(128)}}"></td>
+  File "F:\PYweb\for_MY_flask\app\models.py", line 49, in avatar
+    return 'http://www.gravatar.com/avatar/' + md5(self.email).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: Unicode-objects must be encoded before hashing
+2017-08-30 20:47:22,457 ERROR: Exception on /user/cloud3 [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 124, in user
+    posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "F:\PYweb\for_MY_flask\app\templates\base.html", line 28, in top-level template code
+    {% block content %}
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 7, in block "content"
+    <td><img src="{{user.avatar(128)}}"></td>
+  File "F:\PYweb\for_MY_flask\app\models.py", line 49, in avatar
+    return 'http://www.gravatar.com/avatar/' + md5(self.email).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: Unicode-objects must be encoded before hashing
+2017-08-30 20:47:59,917 ERROR: Exception on /user/cloud3 [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 124, in user
+    posts = posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "F:\PYweb\for_MY_flask\app\templates\base.html", line 28, in top-level template code
+    {% block content %}
+  File "F:\PYweb\for_MY_flask\app\templates\user.html", line 7, in block "content"
+    <td><img src="{{user.avatar(128)}}"></td>
+  File "F:\PYweb\for_MY_flask\app\models.py", line 49, in avatar
+    return 'http://www.gravatar.com/avatar/' + md5(self.email.encode('utf-8')).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: Unicode-objects must be encoded before hashing
+2017-08-30 20:48:03,209 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 46, in index
+    posts=posts)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "F:\PYweb\for_MY_flask\app\templates\base.html", line 28, in top-level template code
+    {% block content %}
+  File "F:\PYweb\for_MY_flask\app\templates\index.html", line 28, in block "content"
+    {% include 'post.html' %}
+  File "F:\PYweb\for_MY_flask\app\templates\post.html", line 3, in top-level template code
+    <td><img src="{{post.author.avatar(50)}}"></td><td><i>{{post.author.nickname}} says:</i><br>{{post.body}}</td>
+  File "F:\PYweb\for_MY_flask\app\models.py", line 49, in avatar
+    return 'http://www.gravatar.com/avatar/' + md5(self.email.encode('utf-8')).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: Unicode-objects must be encoded before hashing
+2017-08-30 20:48:12,091 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:55:37,909 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-08-30 20:59:13,969 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
