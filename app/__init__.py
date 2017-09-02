@@ -15,6 +15,10 @@ from flask_login import LoginManager
 from flask_openid import OpenID
 from config import basedir, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD
 
+# time set global
+from .momentjs import momentjs
+app.jinja_env.globals['momentjs'] = momentjs
+
 lm = LoginManager()
 lm.init_app(app)
 lm.login_view = 'login'
