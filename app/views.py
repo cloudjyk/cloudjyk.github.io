@@ -10,6 +10,8 @@ from datetime import datetime
 # mail for notification
 from .emails import follower_notification
 
+# import asyncio
+
 @app.before_request
 def before_request():
     g.user = current_user
@@ -161,6 +163,11 @@ def follow(nickname):
     flash('You are now following ' + nickname + '!')
     follower_notification(user, g.user)
     return redirect(url_for('user', nickname=nickname))
+
+    # loop = asyncio.get_event_loop()
+    # tasks = [follower_notification(user, g.user), rr_red()]
+    # loop.run_until_complete(asyncio.wait(tasks))
+    # loop.close()
 
 @app.route('/unfollow/<nickname>')
 @login_required

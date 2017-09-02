@@ -1516,3 +1516,249 @@ Traceback (most recent call last):
     send_async_email(app, msg)
 NameError: name 'app' is not defined
 2017-09-02 15:58:43,870 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:26:39,123 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:27:09,451 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:27:59,800 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:28:10,577 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:28:50,498 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:28:57,427 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 166, in follow
+    loop = asyncio.get_event_loop()
+NameError: name 'asyncio' is not defined
+2017-09-02 16:29:53,939 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:30:00,204 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 167, in follow
+    loop = asyncio.get_event_loop()
+NameError: name 'asyncio' is not defined
+2017-09-02 16:31:10,920 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:31:21,086 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 167, in follow
+    loop = asyncio.get_event_loop()
+NameError: name 'asyncio' is not defined
+2017-09-02 16:31:36,484 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 167, in follow
+    loop = asyncio.get_event_loop()
+NameError: name 'asyncio' is not defined
+2017-09-02 16:33:06,113 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:33:15,345 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 171, in follow
+    loop.run_until_complete(asyncio.wait(tasks))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in wait
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in <setcomp>
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 554, in ensure_future
+    raise TypeError('A Future, a coroutine or an awaitable is required')
+TypeError: A Future, a coroutine or an awaitable is required
+2017-09-02 16:33:38,300 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 171, in follow
+    loop.run_until_complete(asyncio.wait(tasks))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in wait
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in <setcomp>
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 554, in ensure_future
+    raise TypeError('A Future, a coroutine or an awaitable is required')
+TypeError: A Future, a coroutine or an awaitable is required
+2017-09-02 16:35:01,662 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 171, in follow
+    loop.run_until_complete(asyncio.wait(tasks))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in wait
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 345, in <setcomp>
+    fs = {ensure_future(f, loop=loop) for f in set(fs)}
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\asyncio\tasks.py", line 554, in ensure_future
+    raise TypeError('A Future, a coroutine or an awaitable is required')
+TypeError: A Future, a coroutine or an awaitable is required
+2017-09-02 16:36:10,684 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:36:20,717 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:36:31,457 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2017-09-02 16:37:17,509 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 16:37:41,069 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2017-09-02 16:39:24,226 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2017-09-02 16:39:50,632 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2017-09-02 16:40:17,969 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 19:42:31,876 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 20:08:06,211 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 20:11:57,447 ERROR: Exception on /index [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1831, in preprocess_request
+    rv = func()
+  File "F:\PYweb\for_MY_flask\app\views.py", line 208, in before_request
+    if g.user.is_authenticated():
+TypeError: 'bool' object is not callable
+2017-09-02 20:12:41,695 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 20:14:26,853 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
