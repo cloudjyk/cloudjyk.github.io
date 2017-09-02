@@ -11,6 +11,9 @@ from datetime import datetime
 from .emails import follower_notification
 
 # import asyncio
+from flask_sqlalchemy import get_debug_queries
+from config import DATABASE_QUERY_TIMEOUT
+
 
 @app.before_request
 def before_request():
@@ -19,6 +22,13 @@ def before_request():
         g.user.last_seen = datetime.utcnow()
         db.session.add(g.user)
         db.session.commit()
+
+@app.after_request
+def after_request(response):
+    for query in get_debug_queries():
+        if query.duration >= DATABASE_QUERY_TIMEOUT:
+            app.logger.warning("SLOW QUERY: %s\nParameters: %s\nDuration: %fs\nContext: %s\n" % (query.statement, query.parameters, query.duration, query.context))
+    return response
 
 @app.route('/', methods = ['GET', 'POST'])
 @app.route('/index', methods = ['GET', 'POST'])

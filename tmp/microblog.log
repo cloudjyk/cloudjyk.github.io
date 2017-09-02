@@ -1902,3 +1902,4 @@ Traceback (most recent call last):
 TypeError: 'bool' object is not callable
 2017-09-02 20:24:54,583 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-09-02 20:50:29,640 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:43]
+2017-09-02 21:23:47,686 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:43]

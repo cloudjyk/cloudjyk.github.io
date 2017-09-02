@@ -50,3 +50,8 @@ POSTS_PER_PAGE = 3
 # for search
 WHOOSH_BASE = os.path.join(basedir, 'search.db')
 MAX_SEARCH_RESULTS = 50
+
+# check for db speed
+SQLALCHEMY_RECORD_QUERIES = True
+# slow database query threshold (in seconds)
+DATABASE_QUERY_TIMEOUT = 0.5
