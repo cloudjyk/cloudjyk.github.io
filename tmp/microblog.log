@@ -1254,3 +1254,265 @@ Traceback (most recent call last):
 AttributeError: 'BaseQuery' object has no attribute 'whoosh_search'
 2017-08-30 21:39:32,609 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
 2017-08-30 21:40:00,472 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 13:44:00,335 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 13:55:46,713 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:20:53,621 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:24:16,124 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:29:18,674 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:31:17,877 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:36:28,252 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:42:00,055 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:44:26,575 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:45:27,518 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 14:55:27,351 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:02:12,312 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:05:41,781 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:11:53,387 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:12:57,289 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:15:07,719 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:15:33,775 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 21, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 12, in send_email
+    mail.send(msg)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\smtplib.py", line 883, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp10,DsCowADn6LyaWqpZeATNDQ--.32728S2 1504336538,please see http://mail.163.com/help/help_spam_16.htm?ip=218.72.124.28&hostid=smtp10&time=1504336538')
+2017-09-02 15:17:39,391 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 21, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 12, in send_email
+    mail.send(msg)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\smtplib.py", line 883, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp10,DsCowABHANQYW6pZymXNDQ--.32735S2 1504336664,please see http://mail.163.com/help/help_spam_16.htm?ip=218.72.124.28&hostid=smtp10&time=1504336664')
+2017-09-02 15:23:49,750 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 21, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 12, in send_email
+    mail.send(msg)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\smtplib.py", line 883, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp10,DsCowABXD9OKXKpZgn3ODQ--.32581S2 1504337034,please see http://mail.163.com/help/help_spam_16.htm?ip=218.72.124.28&hostid=smtp10&time=1504337034')
+2017-09-02 15:26:08,393 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:26:33,908 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:27:06,316 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:33:59,717 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:35:37,176 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:40:21,957 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:40:31,637 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'coroutine' object is not callable
+2017-09-02 15:41:37,151 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:41:41,135 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'coroutine' object is not callable
+2017-09-02 15:41:48,475 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1740, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\wrappers.py", line 885, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\werkzeug\test.py", line 884, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'coroutine' object is not callable
+2017-09-02 15:48:55,607 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:50:28,235 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:54:57,632 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:55:04,196 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 27, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 18, in send_email
+    send_async_email(app, msg)
+NameError: name 'app' is not defined
+2017-09-02 15:56:26,417 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
+2017-09-02 15:56:34,401 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 27, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 18, in send_email
+    send_async_email(app, msg)
+NameError: name 'app' is not defined
+2017-09-02 15:56:48,944 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 27, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 18, in send_email
+    send_async_email(app, msg)
+NameError: name 'app' is not defined
+2017-09-02 15:57:08,563 ERROR: Exception on /follow/cloudjyk [GET] [in C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Cloudjyk\AppData\Local\Programs\Python\Python35\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "F:\PYweb\for_MY_flask\app\views.py", line 162, in follow
+    follower_notification(user, g.user)
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 27, in follower_notification
+    user = followed, follower = follower))
+  File "F:\PYweb\for_MY_flask\app\emails.py", line 18, in send_email
+    send_async_email(app, msg)
+NameError: name 'app' is not defined
+2017-09-02 15:58:43,870 INFO: microblog startup [in F:\PYweb\for_MY_flask\app\__init__.py:39]
